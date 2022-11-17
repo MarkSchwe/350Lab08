@@ -24,7 +24,7 @@ FILE *fil;
 //opens output file associated with the command the test string asks for
 fil = popen(test, "r");
 //infinite loop
-for ( ; ; ) 
+while(1) 
 {
     //gets each line of the file
 if (fgets(line, 256, fil) == NULL){
